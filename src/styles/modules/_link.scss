@@ -1,0 +1,13 @@
+.link {
+	font-size: 12px;
+    letter-spacing: 0.3px;
+	color: $linkColor;
+
+	@include transition(color, .1s ease-out);
+
+	&:hover {
+		color: $linkColorHover;
+
+		@include transition(color, .1s ease-in);
+	}
+}

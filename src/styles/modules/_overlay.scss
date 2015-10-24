@@ -1,0 +1,26 @@
+.overlay {
+  display: block;
+  position: absolute;
+  background-color: $overlayBgColor;
+  padding: em(8) em(12);
+  right: 5px;
+  z-index: 10;
+
+  &:before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	z-index: 9;
+	top: -10px;
+	right: 22px;
+	background-color: $overlayBgColor;
+
+	@include transform(rotate(45deg));
+  }
+  
+  &.is-hidden {
+	  display: none;
+  }
+}

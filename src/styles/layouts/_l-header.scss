@@ -1,0 +1,12 @@
+.l-header {
+  @include clearfix;
+
+  .list--horizontal {
+	  float: right;
+  }
+  
+  .overlay {
+	margin-top: 20px;
+  }
+  
+}

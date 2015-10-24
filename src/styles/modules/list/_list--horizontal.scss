@@ -1,0 +1,22 @@
+.list--horizontal {
+	display: inline-block;
+	
+	&--item {
+	  margin-left: em(-4);
+	  margin-right: em(20);
+	  display: inline-block;
+	  vertical-align: middle;
+
+	  &:first-child {
+		  margin-left: 0;
+	  }
+
+	  &:last-child {
+		  margin-right: 0;
+	  }
+
+	  &.has-overlay {
+		position: relative;
+	  }
+	}
+}
